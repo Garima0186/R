@@ -1,0 +1,29 @@
+#Getting started with RStudio and Installing packages
+
+#Load the datasets
+
+#Step 1 - Click the plus symbol on the top left and click R Script.
+#Step 2 - Now you load the iris dataset. Enter the following lines into the editor window that appears
+#Then select all the text, and click Run just above the editor window.
+   
+   library (datasets)
+    data(iris)
+    View(iris) 
+    
+#Step3: You are taken to the data view tab to inspect your dataset. The dataset contains five columns and the first four are floating point 
+# type while the last column is a label of data type string which contains the category value.
+ 
+#Step 4 - Now you can find the different species present in the data set. Enter the following command in the editor window and click Run.
+    
+    unique(iris$Species)
+    
+#In the Console window at the bottom you can see the result of the executed command and know that 
+#    there are only three different species present in the data set.
+
+#Step 5 - Next you will look into the data set in more detail. Open a Console.
+
+#Step 6 - Run the following command in the console.
+
+install.packages("GGally", repos = "https://cran.r-project.org", type = "source") 
+ 
+Step 7 - Click Enter to install the packages
